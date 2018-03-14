@@ -1,5 +1,5 @@
 {
-  "name": "async-wrapper",
+  "name": "async-parser",
   "version": "1.0.0",
   "description": "Library for parse JSON API's and not only.",
   "main": "index.js",
