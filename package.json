@@ -7,9 +7,22 @@
     "test": "node_modules/.bin/mocha --timeout 20000 --ui tdd --reporter spec test/tests.js",
     "prettier": "node_modules/.bin/prettier --use-tabs --tab-width 4 --single-quote --trailing-comma es5 --write src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "async",
+    "parser",
+    "json",
+    "api"
+  ],
+  "author": "Alexander Sharabarov <alcovegan@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/alcovegan/async-parser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alcovegan/async-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alcovegan/async-parser/issues"
+  },
   "dependencies": {
     "async": "^2.6.0",
     "axios": "^0.16.2",
