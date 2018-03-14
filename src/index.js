@@ -95,7 +95,11 @@ function asyncParser(
 					}
 
 					// return callback with results
-					handleResultsCallback(results, failedAssets, callbackForResults);
+					handleResultsCallback(
+						results,
+						failedAssets,
+						callbackForResults
+					);
 
 					console.log(
 						chalk.white.bgGreenBright(
