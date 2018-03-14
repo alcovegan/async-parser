@@ -8,6 +8,12 @@
 
 Также можно просто парсить по списку URL или массиву меняющихся в URL частей (читайте ниже).
 
+## Установка
+
+```bash
+npm install --save async-parser
+```
+
 ## Использование
 
 На примере [API Travelpayouts](https://www.travelpayouts.com).
