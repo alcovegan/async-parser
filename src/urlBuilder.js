@@ -1,4 +1,3 @@
-const querystring = require('querystring');
 const urlAssembler = require('safe-url-assembler');
 
 module.exports = function(schema) {
@@ -8,18 +7,6 @@ module.exports = function(schema) {
 		const changingAssets = {};
 		const changingParams = {};
 		const newSegments = schema.addSegments && schema.addSegments.length > 0 ? schema.addSegments.join('') : ''
-
-		// console.log(typeof asset);
-
-		function checkTypeOfAsset(asset) {
-			if(typeof asset === 'string' || typeof asset === 'number') {
-				return true
-			} else {
-				return false
-			}
-		}
-
-		// checkTypeOfAsset(asset)
 
 		schema.changingAssets && schema.changingAssets.forEach(ca => {
 			changingAssets[ca] = typeof asset !== 'object'
@@ -31,8 +18,6 @@ module.exports = function(schema) {
 				? asset
 				: asset[cp]
 		});
-
-		// console.log(changingParams);
 
 		const assembledURL = urlAssembler(schema.baseUrl)
 			.prefix(schema.prefix ? schema.prefix : '')
@@ -49,8 +34,6 @@ module.exports = function(schema) {
 					: ''
 			)
 			.toString()
-
-		// console.log(assembledURL);
 
 		return assembledURL
 	}
