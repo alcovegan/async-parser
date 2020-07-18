@@ -1,6 +1,6 @@
 {
   "name": "async-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for parse JSON API's and not only.",
   "main": "src/index.js",
   "scripts": {
