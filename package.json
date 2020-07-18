@@ -2,7 +2,7 @@
   "name": "async-parser",
   "version": "1.0.0",
   "description": "Library for parse JSON API's and not only.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha --timeout 20000 --ui tdd --reporter spec test/tests.js",
     "prettier": "node_modules/.bin/prettier --use-tabs --tab-width 4 --single-quote --trailing-comma es5 --write src/index.js"
