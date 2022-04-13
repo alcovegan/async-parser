@@ -24,7 +24,7 @@
     "url": "https://github.com/alcovegan/async-parser/issues"
   },
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^3.2.2",
     "axios": "^0.16.2",
     "chalk": "^2.3.2",
     "log-symbols": "^2.2.0",
